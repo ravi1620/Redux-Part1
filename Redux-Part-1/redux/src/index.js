@@ -15,11 +15,11 @@ let reducer = (latestCrew = crew,dispatchedObj)=>{
 console.log("Inside reducer Function");
 console.log(dispacthedObj);
 
-if(dispacthedObj.type === "addActors"){
+if(dispatchedObj.type === "addActors"){
 return {...latestCrew,actors:latestCrew.actors.concat([dispatchedObj.data])};
-}else if(dispacthedObj.type == "addActresses"){
+}else if(dispatchedObj.type == "addActresses"){
   return {...latestCrew,actresses:latestCrew.actresses.concat([dispatchedObj.data])};
-}else if(dispacthedObj.type == "addDirectors"){
+}else if(dispatchedObj.type == "addDirectors"){
   return {...latestCrew,directors:latestCrew.directors.concat([dispatchedObj.data])};
 }
   
