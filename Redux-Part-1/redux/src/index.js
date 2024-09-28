@@ -22,6 +22,7 @@ return {...latestCrew,actors:latestCrew.actors.concat([dispacthedObj.data])};
 }else if(dispacthedObj.type == "addDirectors"){
   return {...latestCrew,directors:latestCrew.directors.concat([dispacthedObj.data])};
 }
+  
 }
 
 let store = createStore(reducer);
