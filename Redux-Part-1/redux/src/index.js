@@ -11,16 +11,16 @@ let crew = {
   directors:[],
 }
 
-let reducer = (latestCrew = crew,dispacthedObj)=>{
+let reducer = (latestCrew = crew,dispatchedObj)=>{
 console.log("Inside reducer Function");
 console.log(dispacthedObj);
 
 if(dispacthedObj.type === "addActors"){
-return {...latestCrew,actors:latestCrew.actors.concat([dispacthedObj.data])};
+return {...latestCrew,actors:latestCrew.actors.concat([dispatchedObj.data])};
 }else if(dispacthedObj.type == "addActresses"){
-  return {...latestCrew,actresses:latestCrew.actresses.concat([dispacthedObj.data])};
+  return {...latestCrew,actresses:latestCrew.actresses.concat([dispatchedObj.data])};
 }else if(dispacthedObj.type == "addDirectors"){
-  return {...latestCrew,directors:latestCrew.directors.concat([dispacthedObj.data])};
+  return {...latestCrew,directors:latestCrew.directors.concat([dispatchedObj.data])};
 }
   
 }
